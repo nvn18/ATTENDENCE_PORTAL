@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        information
+    </title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<style>
+      ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+    </style>
+
+<body>
+    <table>
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>FULL NAME: *</label><label class="validation-error hide" id="fullNameValidationError">This field is required.</label>
+                        <input type="text" name="fullName" id="fullName">
+                    </div>
+                    <div>
+                        <label>EMAIL-ID:</label>
+                        <input type="text" name="email-id" id="email-id">
+                    </div>
+                    <div>
+                        <label>MOBILE.NO:</label>
+                        <input type="text" name="mobile.no" id="mobile.no">
+                    </div>
+                    <div>
+                        <label>ADMISSION NO:</label>
+                        <input type="text" name="admission no" id="admissionno">
+                    </div>
+                    <div>
+                        <label>ATTENDENCE:</label>
+                        <input type="text" name="attendence" id="attendence">
+                    </div>
+                    <div  class="form-action-buttons">
+                        <button type="button" class="btn" onclick="validate()">Submit</button>
+                    </div>
+                    
+                </form>
+            </td>
+        </tr>
+    </table>
+<script>
+    function validate()
+    {
+        window.location="index3.html"
+    }
+</script>
+</body>
+</html>
